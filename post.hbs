@@ -1,23 +1,8 @@
 {{!< default}}
 
 {{#post}}
-<div class="post-content">
-  {{#unless access}}
-    <div class='membersonly-excerpt'>
-      <p>
-        This is probably one of the best posts I've ever written, so it's limited to
-        members-only access.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
 
-      </p>
-      <p>
-        Urna et pharetra pharetra massa massa ultricies mi quis. Iaculis eu non diam
-        phasellus vestibulum lorem sed risus ultricies. Nullam ac tortor vitae purus.
-      </p>
-    </div>
-  {{/unless}}
  
-</div>
 <main class="content" role="main">
 	<article class="{{post_class}}">
 
@@ -119,6 +104,18 @@
 					</div>
 				</div>
 			</div>
+<div class="post-content">
+  {{#unless access}}
+    <div class='membersonly-excerpt'>
+      <p>
+        This is probably one of the best posts I've ever written, so it's limited to
+        members-only access.
+        
+      </p>
+   
+    </div>
+  {{/unless}}
+</div>
 </footer>
 
 
